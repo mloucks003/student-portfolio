@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Demo - Live Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0e17;
+            color: #ffffff;
+        }
+        .demo-header {
+            background: #131720;
+            border-bottom: 2px solid #00ff41;
+            padding: 20px;
+            text-align: center;
+        }
+        .demo-header h1 {
+            color: #00ff41;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .demo-header p {
+            color: #b8c1d9;
+            font-size: 0.9rem;
+        }
+        .demo-buttons {
+            margin-top: 15px;
+        }
+        .demo-btn {
+            display: inline-block;
+            background: #00ff41;
+            color: #0a0e17;
+            padding: 10px 20px;
+            margin: 0 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        .demo-btn:hover {
+            background: #00cc34;
+            transform: translateY(-2px);
+        }
+        .demo-btn.secondary {
+            background: transparent;
+            color: #00ff41;
+            border: 2px solid #00ff41;
+        }
+        .demo-btn.secondary:hover {
+            background: #00ff41;
+            color: #0a0e17;
+        }
+        iframe {
+            width: 100%;
+            height: calc(100vh - 140px);
+            border: none;
+            display: block;
+        }
+        .note {
+            background: #1a1f2e;
+            border-left: 4px solid #00d9ff;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            color: #b8c1d9;
+        }
+        .note strong {
+            color: #00d9ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-header">
+        <h1>🔒 Live Portfolio Preview</h1>
+        <p>This is exactly how your students' portfolios will look when they download and customize them</p>
+        <div class="demo-buttons">
+            <a href="/portfolio/cybersecurity-portfolio.zip" class="demo-btn" download>Download ZIP</a>
+            <a href="/portfolio/cybersecurity-portfolio.tar.gz" class="demo-btn" download>Download TAR.GZ</a>
+            <a href="/portfolio.html" class="demo-btn secondary">Documentation</a>
+        </div>
+    </div>
+    
+    <div class="note">
+        <strong>✓ Dark Cybersecurity Theme</strong> • 
+        <strong>✓ Matrix Rain Effect</strong> • 
+        <strong>✓ Mobile Responsive</strong> • 
+        <strong>✓ Easy to Customize via config.js</strong>
+    </div>
+    
+    <iframe src="http://localhost:8888" title="Portfolio Preview"></iframe>
+</body>
+</html>
